@@ -1,0 +1,32 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    awesome_print (1.6.1)
+    coderay (1.1.1)
+    json (1.8.3)
+    method_source (0.8.2)
+    network_interface (0.0.1)
+    packetfu (1.1.11)
+      network_interface (~> 0.0)
+      pcaprub (~> 0.12)
+    pcaprub (0.12.4)
+    pry (0.10.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    shodan (1.0.0)
+      json (>= 1.4.6)
+    slop (3.6.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  awesome_print
+  packetfu
+  pcaprub
+  pry
+  shodan
+
+BUNDLED WITH
+   1.12.1
