@@ -18,6 +18,6 @@ pkt.ip_daddr = '192.168.1.15'
 # send out
 10.times do
   pkt.to_w
-  puts 'sent'
+  puts "sent from #{pkt.ip_saddr} to #{pkt.ip_daddr}"
   sleep 1
 end
