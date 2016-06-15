@@ -1,0 +1,7 @@
+C example:
+http://www.tenouk.com/Module42.html
+http://www.tenouk.com/Module43a.html
+
+PERL:
+sudo apt-get install libnet-rawip-perl
+http://search.cpan.org/~saper/Net-RawIP-0.25/lib/Net/RawIP.pm
