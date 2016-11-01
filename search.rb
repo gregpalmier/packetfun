@@ -13,8 +13,15 @@ api = Shodan::Shodan.new(shodan['key'])
 
 term = ARGV.first
 # paginate?
-result = api.search(term)
-CSV.open("#{term}.csv", 'w') do |csv|
+begin
+  result = api.search(term)
+rescue Exception => e
+  puts 'Something went wrong!'
+  puts e
+end
+puts "#{result['total']} results found!"
+binding.pry
+CSV.open("#{term}.csv", 'a+') do |csv|
   csv << ['hostnames', 'ip_str', 'ports']
   result['matches'].each do |host|
     h = api.host(host['ip_str'])
